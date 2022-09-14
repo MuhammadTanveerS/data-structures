@@ -4,7 +4,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.Scanner;
 
-public class task01 {
+public class NlpArray {
     public static void main(String[] args) throws IOException {
         System.out.println("Hello World!");
 
@@ -72,7 +72,6 @@ public class task01 {
      * Email
      * Extractor
      */
-
     public static String[] extractEmail(String fileName) throws IOException {
         File file = new File(fileName);
         Scanner sc = new Scanner(file);
@@ -118,4 +117,65 @@ public class task01 {
     return emails;
     
 }
+
+
+/*
+ * TASK 2
+ * 
+ * IMAGE
+ * CROPPING
+ */
+
+public static void extractBoundries(int arr[][])
+{
+
+      for(int i=0; i<arr.length; i++)
+      {
+                System.out.print("\n");
+        for(int j=0; j<arr[i].length; j++)
+        {
+          if( i==0 || j==0  || i==(arr.length-1) || j==(arr[j].length-1) )
+          {
+          System.out.print(arr[i][j]+"  ");
+          }
+          else
+          {
+            System.out.print("   ");
+          }
+        }
+      }
+
+}
+
+
+/*
+ * IMAGE
+ * CROPPING
+ */
+
+public static void cropCenterPart(int arr[][])
+{
+
+      for(int i=0; i<arr.length; i++)
+      {
+                System.out.print("\n      \t ");
+        for(int j=0; j<arr[i].length; j++)
+        {
+          if( i!=0 && j!=0  && i!=(arr.length-1) && j!=(arr[j].length-1) )
+          {
+          System.out.print(arr[i][j]+"  ");
+          }
+          else
+          {
+            System.out.print("   ");
+          }
+        }
+      }
+    }
+
+
+
+
+
+
 }
