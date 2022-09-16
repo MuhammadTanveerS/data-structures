@@ -154,7 +154,7 @@ public static void extractBoundries(int arr[][])
  */
 
 public static void cropCenterPart(int arr[][])
-{
+  {
 
       for(int i=0; i<arr.length; i++)
       {
@@ -171,7 +171,11 @@ public static void cropCenterPart(int arr[][])
           }
         }
       }
-    }
+  }
+
+
+
+   
 
 
 
